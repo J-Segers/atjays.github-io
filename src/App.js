@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { useContext } from 'react';
 import './App.css';
+import Card from "./components/card/Card";
+import { CSSTransition } from 'react-transition-group';
+import { CardContext } from './components/context/CardContextProvider';
 
 function App() {
+  const { showFront } = useContext(CardContext);
+
+  console.log(showFront);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+  <div className="App">
+    <div id="card-container">
+        <CSSTransition
+          in={showFront}
+          timeout={1000}
+          classNames={'card-flip'}
         >
-          Learn React
-        </a>
-      </header>
+          <Card />
+        </CSSTransition>
     </div>
+  </div>
   );
 }
 

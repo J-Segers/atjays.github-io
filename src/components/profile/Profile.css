@@ -1,0 +1,78 @@
+
+#profile {
+    width: 600px;
+    height: 350px;
+    transform: scale(.5, .5);
+    position: inherit;
+    display: grid;
+    grid-template-columns: 16px 113px calc(100% - 169px) 16px;
+    grid-template-rows: 16px 200px calc(100% - 256px) 16px;
+    grid-template-areas:
+        " . . . flip "
+        " . img about ."
+        " . links links ."
+        " . . . . "
+        ;
+    gap: 8px;
+}
+
+#mugshot {
+    grid-area: img;
+}
+
+#mugshot > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-area: about;
+}
+
+#about > h1 {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px black solid;
+}
+
+#links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-area: links;
+}
+
+#links > * {
+    padding: 0;
+    margin: 16px;
+}
+
+#zoom {
+    grid-area: zoom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#flip {
+    grid-area: flip;
+    content: \293E;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
