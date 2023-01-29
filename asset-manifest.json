@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/atjays.github-io/static/css/main.073c9b0a.css",
-    "main.js": "/atjays.github-io/static/js/main.879e82d3.js",
+    "main.css": "/atjays.github-io/static/css/main.e6fa7c12.css",
+    "main.js": "/atjays.github-io/static/js/main.28964c01.js",
     "static/js/787.10b60adc.chunk.js": "/atjays.github-io/static/js/787.10b60adc.chunk.js",
-    "static/media/logo.svg": "/atjays.github-io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/mugshot.jpeg": "/atjays.github-io/static/media/mugshot.3644e5381586ac516845.jpeg",
     "index.html": "/atjays.github-io/index.html",
-    "main.073c9b0a.css.map": "/atjays.github-io/static/css/main.073c9b0a.css.map",
-    "main.879e82d3.js.map": "/atjays.github-io/static/js/main.879e82d3.js.map",
+    "main.e6fa7c12.css.map": "/atjays.github-io/static/css/main.e6fa7c12.css.map",
+    "main.28964c01.js.map": "/atjays.github-io/static/js/main.28964c01.js.map",
     "787.10b60adc.chunk.js.map": "/atjays.github-io/static/js/787.10b60adc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.879e82d3.js"
+    "static/css/main.e6fa7c12.css",
+    "static/js/main.28964c01.js"
   ]
 }
